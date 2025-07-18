@@ -243,7 +243,7 @@ namespace Phanto
 #if UNITY_6000_0_OR_NEWER
             targetVel -= rigidbody.linearVelocity;
 #else
-            targetVel -= rigidbody.linearVelocity;
+            targetVel -= rigidbody.velocity;
 #endif
 
             var accel = targetVel / Time.fixedDeltaTime;
